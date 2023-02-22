@@ -40,6 +40,22 @@ a:hover {
   display: flex;
 }
 
+.strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.new-price {
+  color: red;
+}
+
+.line-through {
+  text-decoration:line-through;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -123,11 +139,38 @@ main .container {
   justify-content: center;
 }
 
+main .row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 main .product {
   position: relative;
   display: inline-block;
   min-width: 300px;
   max-width: 400px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
+main .favorite {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  font-size: 2rem;
+}
+
+main .discount-info {
+  position: absolute;
+  left: 20px;
+  bottom: 120px;
+}
+
+main .discount-info > span {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: red;
+  color: white;
+}

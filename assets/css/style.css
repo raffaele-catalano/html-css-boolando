@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 img {
@@ -23,9 +23,14 @@ a {
   font-size: 1.2rem;
 }
 
+a:hover {
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 .container {
-  width: 80%;
-  /* max-width: 1000px; */
+  width: 70%;
   min-width: 600px;
   margin: 0 auto;
 }
@@ -78,17 +83,13 @@ header {
   z-index: 999; */
   height: 80px;
   background-color: #FF6900;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
 header .customer-target {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 20%;
-}
-
-header ul {
-  display: flex;
 }
 
 header li {
@@ -101,14 +102,12 @@ header .logo {
 }
 
 header .logo img {
-  max-width: 250px;
-  min-width: 150px;
-  max-height: 80px;
-  min-height: 50px;
+  max-width: 200px;
+  max-height: 50px;
 }
 
 header .menu {
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 20%;
 }
@@ -117,3 +116,18 @@ header .menu {
 main {
   margin-top: 80px;
 }
+
+main .container {
+  background-color: wheat;
+  align-items: center;
+  justify-content: center;
+}
+
+main .product {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+  max-width: 400px;
+  cursor: pointer;
+}
+

@@ -3,3 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.px-1{
+  padding: 0 10px;
+}
+
+.px-2{
+  padding: 0 20px;
+}
+
+.px-3{
+  padding: 0 30px;
+}
+
+.py-1{
+  padding: 10px 0;
+}
+
+.py-2{
+  padding: 20px 0;
+}
+
+.py-3{
+  padding: 30px 0;
+}

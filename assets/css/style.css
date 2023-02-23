@@ -28,8 +28,9 @@ text-decoration: underline;
 }
 
 .container {
-  width: 70%;
-  min-width: 600px;
+  width: 90%;
+  max-width: 1400px;
+  /* min-width: 600px; */
   margin: 0 auto;
 }
 
@@ -38,12 +39,20 @@ text-decoration: underline;
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .strong {
   font-weight: bold;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .new-price {
@@ -137,7 +146,8 @@ header .menu {
 
 /*  MAIN  */
 main {
-  margin-top: 150px;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 
 main .container {
@@ -146,37 +156,37 @@ main .container {
   margin-bottom: 30px;
 }
 
-main .row {
+/* main .row {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
-}
+} */
 
 main .product {
   position: relative;
-  width: 400px;
+  width: calc(100% / 3);
+  min-width: 250px;
   margin-bottom: 50px;
-  cursor: pointer;
 }
 
 main .product-image{
   position: relative;
+  cursor: pointer;
 }
 
-main .product-image img {
-  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+.product-image > img {
+  max-width: 100%;
 }
 
-main .product-image:hover .back {
+.product .product-image:hover .back {
+  display: inline-block;
+}
+
+.product .product-image .back {
   display: none;
-}
-
-main .product-image:hover .front {
-  display: block;
-}
-
-main .product-image .front {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 main .favorite {
@@ -185,7 +195,9 @@ main .favorite {
   right: 0;
   padding: 0.5rem 1rem;
   background-color: white;
+  border-radius: 5px 0 0 5px;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 main .favorite:hover {
@@ -195,7 +207,7 @@ main .favorite:hover {
 main .discount-info {
   position: absolute;
   left: 0;
-  bottom: 30px;
+  bottom: 20px;
 }
 
 main .discount-info > span {

@@ -141,8 +141,7 @@ header .logo {
 }
 
 header .logo img {
-  max-width: 200px;
-  max-height: 50px;
+  width: 180px;
 }
 
 header .menu {

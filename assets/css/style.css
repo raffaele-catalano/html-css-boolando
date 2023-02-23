@@ -79,6 +79,10 @@ text-decoration: underline;
   width: 100%;
 }
 
+.px-dx {
+  padding: 0 10px 0 0;
+}
+
 .px-1 {
   padding: 0 10px;
 }
@@ -105,17 +109,20 @@ text-decoration: underline;
 
 /*  HEADER  */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 999;
-  width: 100%;
   height: 80px;
   background-color: #FF6900;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+header .container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .customer-target {
@@ -155,12 +162,6 @@ main .container {
   justify-content: center;
   margin-bottom: 30px;
 }
-
-/* main .row {
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-} */
 
 main .product {
   position: relative;
